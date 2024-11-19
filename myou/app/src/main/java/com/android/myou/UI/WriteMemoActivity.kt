@@ -33,7 +33,7 @@ class WriteMemoActivity : AppCompatActivity() {
         // api 연결
         val apiService = RetrofitClient.apiservice
 
-        // token 가져오기
+        // username 가져오기
         val username: String = App.prefs.getItem("username", "username")
 
         binding.sendMemoToServer.setOnClickListener {
@@ -67,4 +67,5 @@ class WriteMemoActivity : AppCompatActivity() {
         val intent = Intent(this,MyMemoActivity::class.java)
         startActivity(intent)
     }
+
 }

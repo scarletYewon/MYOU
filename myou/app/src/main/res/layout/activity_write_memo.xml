@@ -41,12 +41,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
-            android:maxLines="15"
+            android:maxLines="30"
             android:gravity="top|start"
             android:padding="10dp"
             android:background="@drawable/bg_edittext"
             android:textSize="15sp"
-            android:hint="내용을 15줄 이내로 입력하세요"/>
+            android:hint="내용을 30줄 이내로 입력하세요"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <LinearLayout
         android:id="@+id/btns"

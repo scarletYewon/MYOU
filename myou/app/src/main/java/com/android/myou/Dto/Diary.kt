@@ -27,5 +27,5 @@ data class ResponseDtoDiaryResponseDto(
 
 data class ResponseDtoListDiaryListDto(
     val status : Boolean,
-    val data : DiaryListDto
+    val data : List<DiaryListDto>
 )
