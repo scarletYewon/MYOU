@@ -13,16 +13,16 @@
         android:theme="@style/Theme.MYOU"
         tools:targetApi="31">
         <activity
-            android:name=".MyMemoActivity"
+            android:name=".UI.MyMemoActivity"
             android:exported="false" />
         <activity
-            android:name=".WriteMemoActivity"
+            android:name=".UI.WriteMemoActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".UI.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".LogInActivity"
+            android:name=".UI.LogInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +31,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:name=".UI.MainActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>
