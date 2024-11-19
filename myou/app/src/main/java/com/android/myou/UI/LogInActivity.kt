@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
+import com.android.myou.App
 import com.android.myou.api.RetrofitClient
 import com.android.myou.databinding.ActivityLogInBinding
 import kotlinx.coroutines.Dispatchers
@@ -26,10 +26,11 @@ class LogInActivity : AppCompatActivity() {
         binding.goLogin.setOnClickListener {
             val id = binding.id.text.toString()
             val pw = binding.pw.text.toString()
-            lifecycleScope.launch(Dispatchers.IO) {
+            GlobalScope.launch(Dispatchers.IO) {
                 try {
                     val response = apiService.logIn(id,pw)
                     Log.e("API Response", response.toString())
+                    App.prefs.addItem("username", response.data)
                     goMain()
                 } catch (e: Exception) {
                     Log.e("Error", e.message.toString())

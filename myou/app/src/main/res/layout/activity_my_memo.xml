@@ -10,9 +10,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -29,23 +29,25 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/write_new_memo"
-            android:layout_marginEnd="20dp"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
             android:src="@drawable/icon_plus"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <RelativeLayout
         app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp" />
+            tools:listitem="@layout/item_my_memo_list"/>
     </RelativeLayout>
 
 
