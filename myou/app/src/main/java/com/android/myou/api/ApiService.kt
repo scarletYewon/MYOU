@@ -13,11 +13,11 @@ import retrofit2.http.Query
 
 interface ApiService {
     //user-controller
-    @GET("/api/user")
+    @POST("/api/user")
     suspend fun signUp(
         @Body data : User
     ) : ResponseDtoString
-    @POST("api/user")
+    @GET("/api/user")
     suspend fun logIn(
         @Query("username") username : String,
         @Query("password") password : String
