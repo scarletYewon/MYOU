@@ -10,43 +10,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_edittext"
         android:padding="15dp"
         android:orientation="vertical">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/note_title"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="제목"
+                android:textSize="14sp"
                 android:textStyle="bold"
-                android:textSize="14sp"/>
-            <ImageView
-                android:id="@+id/edit_memo"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/delete_memo"
-                android:layout_marginEnd="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icon_edit"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
             <ImageView
                 android:id="@+id/delete_memo"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="5dp"
+                android:padding="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/icon_delete"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
         <TextView
             android:id="@+id/note_date"
@@ -61,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text="내용"
             android:textSize="13sp"
-            android:maxLines="4"/>
+            android:maxLines="3"/>
 
     </LinearLayout>
 

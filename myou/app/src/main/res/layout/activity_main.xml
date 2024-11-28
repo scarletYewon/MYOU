@@ -6,52 +6,55 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UI.MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/logo"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_width="61dp"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
             android:src="@drawable/myou"/>
         <ImageView
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/go_my_memo"
             android:id="@+id/write_new_memo"
-            android:layout_marginEnd="20dp"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
             android:src="@drawable/icon_plus"/>
         <ImageView
             android:id="@+id/go_my_memo"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/icon_profile"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <RelativeLayout
         app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp" />
+            tools:listitem="@layout/item_memo_list"/>
     </RelativeLayout>
 
 
