@@ -35,6 +35,8 @@
             android:padding="10dp"
             android:background="@drawable/bg_edittext"
             android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"
             android:hint="이름"/>
         <EditText
             android:id="@+id/id"
@@ -44,6 +46,8 @@
             android:padding="10dp"
             android:background="@drawable/bg_edittext"
             android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="text"
             android:hint="아이디"/>
         <EditText
             android:id="@+id/pw"
@@ -53,6 +57,8 @@
             android:padding="10dp"
             android:background="@drawable/bg_edittext"
             android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
             android:hint="비밀번호"/>
         <EditText
             android:id="@+id/re_pw"
@@ -62,6 +68,9 @@
             android:padding="10dp"
             android:background="@drawable/bg_edittext"
             android:textSize="15sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
             android:hint="비밀번호 확인"/>
         <TextView
             android:id="@+id/warn_text"

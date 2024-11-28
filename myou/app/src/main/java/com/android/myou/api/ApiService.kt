@@ -1,7 +1,6 @@
 package com.android.myou.api
 
 import com.android.myou.Dto.DiaryRequestDto
-import com.android.myou.Dto.ResponseDtoDiaryResponseDto
 import com.android.myou.Dto.ResponseDtoListDiaryListDto
 import com.android.myou.Dto.ResponseDtoString
 import com.android.myou.Dto.User
@@ -13,21 +12,17 @@ import retrofit2.http.Query
 
 interface ApiService {
     //user-controller
-    @GET("/api/user")
+    @POST("/api/user")
     suspend fun signUp(
         @Body data : User
     ) : ResponseDtoString
-    @POST("api/user")
+    @GET("/api/user")
     suspend fun logIn(
         @Query("username") username : String,
         @Query("password") password : String
     ) : ResponseDtoString
 
-    //diary-controller
-    @GET("/api/diary")
-    suspend fun getDiary(
-        @Query("id") id : Int
-    ) : ResponseDtoDiaryResponseDto
+//    diary-controller
     @POST("/api/diary")
     suspend fun addDiary(
         @Body data : DiaryRequestDto
