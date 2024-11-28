@@ -1,4 +1,4 @@
-package com.android.myou.Adapter
+package com.android.myou.Dto
 
 data class Memo(
     val id : Int,

@@ -9,26 +9,19 @@ import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.myou.Adapter.FeedListAdapter
-import com.android.myou.Adapter.Memo
-import com.android.myou.Adapter.MyListAdapter
+import com.android.myou.Dto.Memo
 import com.android.myou.App
 import com.android.myou.Dto.DiaryListDto
-import com.android.myou.R
 import com.android.myou.api.RetrofitClient
 import com.android.myou.databinding.ActivityMainBinding
-import com.android.myou.databinding.ActivitySignUpBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {

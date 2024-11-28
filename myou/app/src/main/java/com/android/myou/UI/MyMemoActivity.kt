@@ -1,6 +1,5 @@
 package com.android.myou.UI
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -10,18 +9,13 @@ import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.android.myou.Adapter.FeedListAdapter
-import com.android.myou.Adapter.Memo
+import com.android.myou.Dto.Memo
 import com.android.myou.Adapter.MyListAdapter
 import com.android.myou.App
 import com.android.myou.Dto.DiaryListDto
-import com.android.myou.R
 import com.android.myou.api.RetrofitClient
-import com.android.myou.databinding.ActivityMainBinding
 import com.android.myou.databinding.ActivityMyMemoBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

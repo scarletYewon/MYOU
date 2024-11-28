@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.android.myou.App
+import com.android.myou.Dto.Memo
 import com.android.myou.R
 import com.android.myou.UI.DetailActivity
 import com.android.myou.UI.MyMemoActivity
